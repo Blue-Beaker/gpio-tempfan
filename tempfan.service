@@ -1,0 +1,12 @@
+[Unit]
+Description=TempFan
+
+[Service]
+Type=simple
+# Point to your tempfan.sh file
+ExecStart=/home/pi/tempfan/tempfan.sh
+Restart=on-failure
+RestartSec=1s
+
+[Install]
+WantedBy=multi-user.target
