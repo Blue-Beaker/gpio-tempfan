@@ -20,7 +20,7 @@ do
     then
         if [ $state != 1 ]
         then
-        echo "Temp:"$temp" < Thresold:"$thresold", Fan ON"
+        echo "Temp:"$temp" > Thresold:"$thresold", Fan ON"
         echo 1 > /sys/class/gpio/$gpiochip/subsystem/gpio$offset/value
         state=1
         fi
