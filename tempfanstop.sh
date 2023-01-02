@@ -1,2 +1,2 @@
 #! /bin/bash
-echo $1 > /sys/class/gpio/$0/subsystem/unexport 
+echo $2 > /sys/class/gpio/$1/subsystem/unexport 
