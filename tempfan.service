@@ -5,6 +5,8 @@ Description=TempFan
 Type=simple
 # Point to your tempfan.sh file
 ExecStart=/home/pi/tempfan/tempfan.sh
+# Point to your tempfanstop.sh file
+ExecStopPost=/home/pi/tempfan/tempfanstop.sh
 Restart=on-failure
 RestartSec=1s
 
